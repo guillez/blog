@@ -1,6 +1,32 @@
 # blog
-
 Blog armado con laravel 5.5 siguiendo los pasos del canal de youtube
+
+PARA USUARIOS DE UBUNTU 16 Y PHP 7
+
+apt-get install composer
+
+composer update
+
+sudo apt-get install php-xml
+
+sudo apt-get install php7.0-curl
+
+sudo apt-get install php7.0-gd
+
+sudo apt-get install php7.0-mbstring
+
+sudo apt-get install php7.0-zip
+
+sudo service php7.0-fpm restart
+
+composer update
+
+php artisan key:generate
+
+php artisan migrate
+
+-------------------------------------------------------
+
 
 https://www.youtube.com/watch?v=8KcSezUegr4
 
