@@ -19,6 +19,7 @@
 	{{ Form::label('file','Imagen') }}
 	{{ Form::file('file') }}
 </div>
+
 <div class="form-group"> 
 	{{ Form::label('status','Estado') }}
 	<label> 
