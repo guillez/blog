@@ -135,3 +135,5 @@ php artisan migrate
 php artisan migrate refresh
 
 php artisan make:migration create_pais_table
+
+php artisan make:policy PostPolicy

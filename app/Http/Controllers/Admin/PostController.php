@@ -91,12 +91,15 @@ class PostController extends Controller
      */
     public function edit($id)
     {
+        $post = Post::find($id);
+
+        $this->authorize('pass',$post);
 
         $categories = Category::orderBy('name','ASC')->pluck('name','id');
 
         $tags = Tag::orderBy('name','ASC')->get();     
            
-        $post = Post::find($id);
+
        
         return view('admin.posts.edit', compact('post','categories','tags'));
     }
